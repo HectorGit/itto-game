@@ -1,0 +1,63 @@
+Gestion de la integracion del proyecto
+
+4-2
+4-2 Desarrollar el acta de constitucion del proyecto
+Enunciado del trabajo del Proyecto,Entrada
+Caso de Negocio,Entrada
+Acuerdos,Entrada
+Factores ambientales de la Empresa,Entrada
+Activos de los procesos de la organizacion,Entrada
+
+Juicio de expertos,Herramienta
+Tecnicas de Facilitacion,Herramienta
+
+Acta de constitucion del proyecto,Salida
+
+4-4
+4-4 Desarrollar el plan para la direccion del proyecto
+Acta de Constitucion del Proyecto,Entrada
+Salidas de otros procesos,Entrada
+Factores ambientales de la empresa,Entrada
+Activos de los procesos de la organizacion,Entrada
+
+Juicio de expertos,Herramienta
+Tecnicas de Facilitacion,Herramienta
+
+Plan para la direccion del proyecto,Salida
+
+4-6
+4-6 Dirigir y gestionar el trabajo del proyecto
+Plan para la direccion del Proyecto,Entrada
+Solicitudes de cambio aprobadas,Entrada
+Factores ambientales de la empresa,Entrada
+Activos de los procesos de la organizacion,Entrada
+
+Juicio de expertos,Herramienta
+Sistema de informacion para la direccion de proyectos,Herramienta
+Reuniones,Herramienta
+
+Entregables,Salida
+Datos de desempeño del trabajo,Salida
+Solicitudes de cambio,Salida
+Actualizaciones al plan para la direccion del proyecto,Salida
+Actualizaciones a los documentos del proyecto,Salida
+
+4-8
+4-8 Monitorear y controlar el trabajo del proyecto
+Plan para la direccion del Proyecto,Entrada
+Pronóstico del cronograma,Entrada
+Pronósticos de costos,Entrada
+Cambios validados,Entrada
+Información de desempeño del trabajo,Entrada
+Factores ambientales de la empresa,Entrada
+Activos de los procesos de la organizacion,Entrada
+
+Juicio de expertos,Herramienta
+Técnicas analíticas,Herramienta
+Sistema de informacion para la direccion de proyectos,Herramienta
+Reuniones,Herramienta
+
+Solicitudes de cambio,Salida
+Informes de desempeño del trabajo,Salida
+Actualizaciones al plan para la direccion del proyecto,Salida
+Actualizaciones a los documentos del proyecto,Salida
