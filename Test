@@ -1,0 +1,86 @@
+package com.androiddev.hectorperez.myapplication;
+
+/**
+ * Created by saviouraccount on 2015-03-06.
+ */
+public class Test {
+
+    //once the user selects a process, a test must be created from that process.
+    //this will loop through the elements and request and answer for each question/element
+    //must keep track of correct/wrong answers.
+    //should provide % correct/ %incorrect
+
+    Process P; // process p has all its questions. (assume).
+
+    //a process has     Question[] processElements; with numElements questions.
+    int total_questions;
+    int total_correct;
+    int total_incorrect;
+    Question currentQ;
+
+    int pointer = 0;// current index of next element/question to return
+
+    //so basically, to make ALL processes make N questions per process.
+    //there will be M processes stored.
+    //to make a test, just make a test out of that process. and run it? -> what would an activity get out of this
+
+    //an activity would get the next question from the test's process. (AND THE TOTAL NUMBER OF QUESTIONS in the process).
+    //an activity would get the total amount correct and incorrect.
+
+
+    public Test(){
+
+    }
+
+    public Test(Process P){
+        this.P = P;
+        total_correct=0;
+        total_incorrect =0;
+        currentQ = null;// does this work.
+    }
+
+    public boolean answerCorrect(String answer){
+        if(answer.equals(currentQ.getCategory())){
+            total_questions++;
+            total_correct++;
+            return true;
+        }else{
+            total_questions++;
+            total_incorrect++;
+            return false;
+        }
+    }
+
+    public float percentageCorrect(){
+        return (total_correct/total_questions)*100;
+    }
+
+    public float percentageIncorrect(){
+        return (total_incorrect/total_questions)*100;
+    }
+
+    /*the idea behind this is that after a question is answered,
+    * the activity will turn into the same layout,but
+    * the next question will be in the text.
+    *
+    *
+    *
+    * */
+    public Question getNext(){ // returns the next question so that its fields
+                                // (category STRING and STRING element can be addressed.)
+        if(pointer < P.processElements.length) {
+            currentQ = P.processElements[pointer]; // currentQ is just a pointer.
+        }else{
+            System.out.println("NO MORE QUESTIONS, OUT OF BOUNDS."); // careful!
+        }
+
+        pointer++;
+        return P.processElements[pointer]; // do we still need to do this??? redundant
+
+    }
+
+    public String getProcessTitle(){
+        return P.title;
+    }
+
+}
